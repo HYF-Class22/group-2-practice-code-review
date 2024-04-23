@@ -1,4 +1,4 @@
-import { intersection } from './intersection.js';
+import { filterIntersection } from './intersection.js';
 
 // test cases
 const cases = [
@@ -128,7 +128,8 @@ const cases = [
 ];
 
 // run solution to test
-for (const solution of [intersection]) {
+// add name of functions to run test
+for (const solution of [filterIntersection]) {
   describe(
     solution.name +
     ': return an array of values that are in both the first and the second arrays',
