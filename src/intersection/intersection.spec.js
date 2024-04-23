@@ -130,17 +130,11 @@ const cases = [
 // run solution to test
 // add name of functions to run test
 for (const solution of [filterIntersection]) {
-  describe(
-    `${solution.name
-    }: return an array of values that are in both the first and the second arrays`,
-    () => {
-      for (const caseInfo of cases) {
-        it(caseInfo.label, () => {
-          expect(solution(caseInfo.argA, caseInfo.argB)).toEqual(
-            caseInfo.answer,
-          );
-        });
-      }
-    },
-  );
+  describe(`${solution.name}: return an array of values that are in both the first and the second arrays`, () => {
+    for (const caseInfo of cases) {
+      it(caseInfo.label, () => {
+        expect(solution(caseInfo.argA, caseInfo.argB)).toEqual(caseInfo.answer);
+      });
+    }
+  });
 }
