@@ -1,4 +1,4 @@
-import { filterIntersection } from './intersection.js';
+import { filterIntersection } from './filterIntersection.js';
 
 // test cases
 const cases = [
