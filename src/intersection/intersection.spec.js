@@ -132,7 +132,7 @@ const cases = [
 for (const solution of [filterIntersection]) {
   describe(
     solution.name +
-    ': return an array of values that are in both the first and the second arrays',
+      ': return an array of values that are in both the first and the second arrays',
     () => {
       for (const caseInfo of cases) {
         it(caseInfo.label, () => {
