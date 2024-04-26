@@ -28,3 +28,17 @@ export const sortNumbers = (arrOfNumbers = []) => {
   // return the copied & sorted array of numbers
   return copiedAndSorted;
 };
+export const solutionName1 = (arr = []) => {
+  const newArr = [];
+  while (arr.length > 0) {
+    let minIndex = 0;
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < arr[minIndex]) {
+        minIndex = i;
+      }
+    }
+    newArr.push(arr[minIndex]);
+    arr.splice(minIndex, 1);
+  }
+  return newArr;
+};
